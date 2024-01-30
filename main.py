@@ -60,7 +60,7 @@ async def restart_handler(bot: Client, m: Message):
     await bot.send_message(log_channel, rcredit)
     os.execl(sys.executable, sys.executable, *sys.argv)
  else:
- 	await m.reply_text("You are not started this batch 😶.")
+ 	await m.reply_text("You have not started this batch 😶.")
 
 def meFormatter(milliseconds) -> str:
     milliseconds = int(milliseconds) * 1000
@@ -430,12 +430,12 @@ async def txt_handler(bot: Client, m: Message):
     input7: Message = await bot.listen(editable.chat.id, filters.user(m.from_user.id))
     raw_text7 = input7.text 
     if raw_text7 == 'df':
-        creditx = credit
+        creditx = 'SECRECY'
     elif raw_text7 == '/skip':
         creditx = ''
-    elif raw_text7 == '/skip@dragon_empire7':
+    elif raw_text7 == '/skip@SECRECY':
     	creditx = ''
-    elif raw_text7 == '/skip@dragon_empire7 ':
+    elif raw_text7 == '/skip@':
     	creditx = ''
     else:
         creditx = raw_text7
@@ -506,7 +506,7 @@ async def txt_handler(bot: Client, m: Message):
             else:
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'               
             try:
-                Show = f"**Trying To Download:-**\n\n**Name :-** `{name}`\n**Quality :-** `{res}`\n\n**Piracy is illegal 🚫**\n\nEnter /terms To know our terms and conditions."
+                Show = f"**Trying To Download:-**\n\n**Name :-** `{name}`\n**Quality :-** `{res}`\n\n**Piracy is illegal 🚫**"
                 prog = await m.reply_text(Show)
                 cc = f'**Index: **{str(count).zfill(3)}\n**File Name: **{name}.mkv\n**Batch: **{b_name}\n\n**{creditx}**'
                 if cmd == "pdf" in url or ".pdf"  in url or "drive"  in url:
