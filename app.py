@@ -6,5 +6,5 @@ def hello_world():
     return 'lakshay'
 
 
-if __name__ == "__main__":
+if __name__ == "Lakshay":
     app.run()
