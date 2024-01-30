@@ -130,7 +130,7 @@ async def c_pdf(bot: Client, m: Message):
           time.sleep(3)
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("Done ✅")
+    await m.reply_text("That's it ❤️")
 
 @bot.on_message(filters.command(["stats"]))
 async def stats(_,event: Message):
@@ -283,7 +283,7 @@ async def vision_pdf(bot: Client, m: Message):
            time.sleep(3)
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("Done ✅")
+    await m.reply_text("That's it ❤️")
 
 @bot.on_message(filters.command('vision'))
 async def vision_pdf(bot: Client, m: Message):
@@ -337,7 +337,7 @@ async def vision_pdf(bot: Client, m: Message):
             time.sleep(3)
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("Done ✅")
+    await m.reply_text("That's it ❤️")
 
 @bot.on_message(filters.command('h2t'))
 async def run_bot(bot: Client, m: Message):
