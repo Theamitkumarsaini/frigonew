@@ -50,7 +50,7 @@ bot = Client(
 @bot.on_message(filters.command(["start"])&(filters.chat(auth_users)))
 async def start_handler(bot: Client, m: Message):        
         editable = await m.reply_text(
-            "Hello 👋 **I am a simple video downloader bot**.\n\n**Developer** : Frigo\n**Language** : Python\n**Framework** : Pyrogram\n\n/txt - **To download from TXT file.**\n/terms - **To know our our terms and conditions.**")
+            "Hello 👋 **I am a simple video downloader bot")
             
 @bot.on_message(filters.command(["restart"]))
 async def restart_handler(bot: Client, m: Message):
