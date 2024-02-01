@@ -24,15 +24,15 @@
     },
     "BOT_TOKEN": {
       "description": "Get from BotFather",
-      "value": "6787528822:AAEVOewwSAXIOmDD7seKCKVTvVmENDsQhTc"
+      "value": "6888105317:AAH0FoMj3myzAMNhtpr-GiXjoeen8C50gRE"
     },
     "AUTH_USERS": {
       "description": "Admin/Owner/Friends ID Seperate by ','  Ex: 44578878,8878899",
-      "value": "6811710742,5374602611"
+      "value": "6811710742"
     },
     "GROUPS": {
       "description": "Group Id",
-      "value": "-4172620031"
+      "value": "-4172620031,-1002075811515,"
     }
   }
 }
