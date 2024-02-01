@@ -430,7 +430,7 @@ async def txt_handler(bot: Client, m: Message):
     input7: Message = await bot.listen(editable.chat.id, filters.user(m.from_user.id))
     raw_text7 = input7.text 
     if raw_text7 == 'df':
-        creditx = 'SECRECY'
+        creditx = 'Downloaded By - 𝙎𝙀𝘾𝙍𝙀𝘾𝙔🦋'
     elif raw_text7 == '/skip':
         creditx = ''
     elif raw_text7 == '/skip@SECRECY':
@@ -506,7 +506,7 @@ async def txt_handler(bot: Client, m: Message):
             else:
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'               
             try:
-                Show = f"**Trying To Download:-**\n\n**Name :-** `{name}`\n**Quality :-** `{res}`\n\n**Piracy is illegal 🚫**"
+                Show = f"**🦋Bhai ho rhi h Downlaod:-**\n\n**Name :-** `{name}`\n**Quality :-** `{res}`\n\n**Ye Video bss mare liye h 😇**"
                 prog = await m.reply_text(Show)
                 cc = f'**Index: **{str(count).zfill(3)}\n**File Name: **{name}.mkv\n**Batch: **{b_name}\n\n**{creditx}**'
                 if cmd == "pdf" in url or ".pdf"  in url or "drive"  in url:
