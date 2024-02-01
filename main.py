@@ -50,7 +50,7 @@ bot = Client(
 @bot.on_message(filters.command(["start"])&(filters.chat(auth_users)))
 async def start_handler(bot: Client, m: Message):        
         editable = await m.reply_text(
-            "Hello 👋 Tanuj \n Lakshay Made This Bot Specially For You")
+            "Hello👋 KUNAL \nLakshay Made This Bot Specially For You")
             
 @bot.on_message(filters.command(["restart"]))
 async def restart_handler(bot: Client, m: Message):
