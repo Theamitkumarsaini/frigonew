@@ -53,11 +53,6 @@ async def start_handler(bot: Client, m: Message):
         editable = await m.reply_text(
             "Hello 👋 **I am a simple video downloader bot")
 	
-@bot.on_message(filters.command("stop") & (filters.chat(auth_users)))
-async def restart_handler(bot: Client, m: Message):
-    await m.reply_text("**STOPPED**🛑🛑", True)
-    os.execl(sys.executable, sys.executable, *sys.argv)
-	
 @bot.on_message(filters.command(["restart"]))
 async def restart_handler(bot: Client, m: Message):
  rcredit = "Bot Restarted by " + f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
