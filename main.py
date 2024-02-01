@@ -45,12 +45,12 @@ bot = Client(
     "bot",
     api_id=23020129,
     api_hash="1e7e17574020886a8b43ebc39d58e616",
-    bot_token="6787528822:AAEVOewwSAXIOmDD7seKCKVTvVmENDsQhTc")
+    bot_token="6888105317:AAH0FoMj3myzAMNhtpr-GiXjoeen8C50gRE")
       
 @bot.on_message(filters.command(["start"])&(filters.chat(auth_users)))
 async def start_handler(bot: Client, m: Message):        
         editable = await m.reply_text(
-            "Hello 👋 **I am a simple video downloader bot")
+            "Hello 👋 Tanuj \n Lakshay Made This Bot Specially For You")
             
 @bot.on_message(filters.command(["restart"]))
 async def restart_handler(bot: Client, m: Message):
