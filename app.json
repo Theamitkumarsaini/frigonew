@@ -1,7 +1,7 @@
 {
-  "name": "Lakshay",
+  "name": "PROFESSOR ",
   "description": "Download videos from various websites using this telegram bot",
-  "repository": "https://github.com/nkhash/textuploader",
+  "repository": "https://github.com/Theamitkumarsaini/frigonew",
   "buildpacks": [
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
