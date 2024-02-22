@@ -43,14 +43,14 @@ botStartTime = time.time()
 batch = []
 bot = Client(
     "bot",
-    api_id=23020129,
-    api_hash="1e7e17574020886a8b43ebc39d58e616",
-    bot_token="6888105317:AAH0FoMj3myzAMNhtpr-GiXjoeen8C50gRE")
+    api_id=20544260,
+    api_hash="a0b00461d3fba22aa186fa648d77787e",
+    bot_token="6968574821:AAH0ZPX1aRJfyE0hjn8iJermZcU8hZiGDJI")
       
 @bot.on_message(filters.command(["start"])&(filters.chat(auth_users)))
 async def start_handler(bot: Client, m: Message):        
         editable = await m.reply_text(
-            "Hello👋 KUNAL \nLakshay Made This Bot Specially For You")
+            "Hello👋 \nPROFESSOR Made This Bot Specially For You")
             
 @bot.on_message(filters.command(["restart"]))
 async def restart_handler(bot: Client, m: Message):
@@ -130,7 +130,7 @@ async def c_pdf(bot: Client, m: Message):
           time.sleep(3)
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("That's it ❤️")
+    await m.reply_text("DONE")
 
 @bot.on_message(filters.command(["stats"]))
 async def stats(_,event: Message):
@@ -283,7 +283,7 @@ async def vision_pdf(bot: Client, m: Message):
            time.sleep(3)
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("That's it ❤️")
+    await m.reply_text("DONE")
 
 @bot.on_message(filters.command('vision'))
 async def vision_pdf(bot: Client, m: Message):
@@ -337,7 +337,7 @@ async def vision_pdf(bot: Client, m: Message):
             time.sleep(3)
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("That's it ❤️")
+    await m.reply_text("DONE")
 
 @bot.on_message(filters.command('h2t'))
 async def run_bot(bot: Client, m: Message):
@@ -546,8 +546,8 @@ async def txt_handler(bot: Client, m: Message):
         logging.error(e)
         await m.reply_text(e)
         await bot.send_message(log_channel, f"`{e}`")
-    await m.reply_text("That's it ❤️")
-    await bot.send_message(log_channel, "That's it ❤️")
+    await m.reply_text("DONE")
+    await bot.send_message(log_channel, "DONE")
     batch.clear() 
 
 bot.run()
